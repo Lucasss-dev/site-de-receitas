@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor001: hsl(0, 0%, 100%);
+    --cor002: hsl(330, 100%, 98%);
+    --cor003: hsl(30, 54%, 90%);
+    --cor004: hsl(30, 18%, 87%);
+    --cor005: hsl(30, 10%, 34%);
+    --cor006: hsl(24, 5%, 18%);
+    --cor007: hsl(14, 45%, 36%);
+    --cor008: hsl(332, 51%, 32%);
+    --fonte001: outfit;
+    --fonte002: young-serif;
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--cor003);
+    font-family: 'young-serif';
+}
+
+main {
+    background-color: var(--cor001);
+    max-width: 375px;
+    max-width: 800px;
+    max-height: 16000px;
+    min-height: 375px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.24);
+}
+
+main img {
+    max-width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 2.7em;
+    padding-left: 0px;
+}
+
+.subtitulo{
+    font-size: 2em;
+    padding: 10px;
+    padding-top: 40px;
+    padding-left: 0px;
+    color: var(--cor007);
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: var(--fonte001);
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+li {
+    font-family: var(--fonte001);
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+ul {
+    line-height: 2em;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+    list-style-type: '\25CF\00A0\00A0\00A0\00A0\00A0\00A0';
+}
+
+.listafinal {
+    columns: 2;
+    list-style: none;
+}
+
+.listafinal02 {
+    color: var(--cor007);
+    font-weight: bold;
+}
+
+hr {
+    width: 700px;
+}
+
+ol {
+    list-style-position: inside;
+    padding: 0px;
+    line-height: 1em;
+    padding-bottom: 30px;
+
+}
+
+.tempodepreparo {
+    text-align: left;
+    list-style-position: inside;
+    background-color: var(--cor002);
+    padding: 20px 20px 10px 20px;
+    line-height: 2.5em;
+    border-radius: 20px;
+}
+
+.tempodepreparo h2 {
+    padding-left: 10px;
+    font-family: var(--fonte001);
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.205), transparent);
+}
+
+footer a:hover{
+    color: darkred;
+    transition-duration: 0.5s;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.445);
+}
